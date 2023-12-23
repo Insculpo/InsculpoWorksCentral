@@ -1,7 +1,7 @@
 class Footer extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
-        <h2>FOOT</h2>
+        <img src="img/logoRef.png" alt="logo" witdh="256" height="256"></div>
         `
     }
 }
