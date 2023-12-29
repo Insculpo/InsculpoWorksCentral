@@ -124,6 +124,14 @@ textarea {
   /* 1 */
 }
 
+#home {
+  background-color: transparent;
+}
+
+.highlight{
+  background-color: #DAA6EF;
+}
+
 a:link {
   color: #DAA6EF
 }
@@ -134,10 +142,29 @@ a:visited {
 
 a:hover {
   color: #E2CAEB;
+  background-color: #DAA6EF;
+ }
+
+#index.active {
+  color:FFFFFF;
+  background-color: #DAA6EF;
 }
 
-a:active {
-  color:#FFFFFF; 
+#arcade.active {
+  color:FFFFFF;
+  background-color: #DAA6EF;
+}
+#encyclopedia.active {
+  color:FFFFFF;
+  background-color: #DAA6EF;
+}
+#design.active {
+  color:FFFFFF;
+  background-color: #DAA6EF;
+}
+#personal.active {
+  color:FFFFFF;
+  background-color: #DAA6EF;
 }
 
 .link-flex {
@@ -145,6 +172,7 @@ a:active {
   flex-flow: row;
   flex-wrap: nowrap;
   justify-content: center;
+  height: 23px;
 }
 
 .top-div{
@@ -160,6 +188,20 @@ a:active {
   margin-left: 10px;
   font-size: larger;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.game-box{
+  display:flex;
+  flex-flow: wrap;
+  padding: 2%;
+}
+
+.game-gif{
+  display:inline;
+  padding: 2;
+  margin: 2%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .gallery-body{
@@ -183,6 +225,7 @@ a:active {
 }
 
 
+
 .core-body {
   background-color:#000;
   color: whitesmoke;
@@ -195,9 +238,18 @@ a:active {
 }
 
 .bar-body {
-  background-color:#312D4C;
+  background-color: #312D4C;
   font-size: larger;
   font-weight: 100;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 2px;
+  opacity: 0.9;
+  border-color: #DAA6EF;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  text-decoration-line: underline;
+  text-decoration-color: white;
 }
 
 .sub-bar-body {
@@ -227,6 +279,12 @@ a:active {
   padding: 1%;
 }
 
+.star-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .prime-div {
   display: flex;
   padding: 1%;
@@ -244,7 +302,21 @@ a:active {
 
 .p {
   color:gainsboro;
+  background-color: #312D4C;
 }
+
+.Nebula{
+  position: absolute;
+  position: top;
+  margin: left;
+  z-index: -2;
+  }
+
+  .Nebula-2 {
+    position: absolute;
+    margin: right;
+    z-index: -4;  
+  }
 
 .picture-frame {
   background-color: #222;
@@ -257,6 +329,7 @@ a:active {
   padding-left: 1%;
   padding-right: 1%;
   max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .picture-mount {
@@ -271,6 +344,24 @@ a:active {
     padding-bottom: 5px;
     text-align: center;
     max-width: 100%;
+}
+
+.terminus {
+  display: flex;
+  margin: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.sub-terminus{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-width: 2px;
+  border-color: #DAA6EF;
+  background-color:#312D4C;
+  opacity: 0.85;
 }
 
 .blog-body {
