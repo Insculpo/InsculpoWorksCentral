@@ -145,24 +145,10 @@ a:hover {
   background-color: #DAA6EF;
  }
 
-#index.active {
-  color:FFFFFF;
-  background-color: #DAA6EF;
-}
-
-#arcade.active {
-  color:FFFFFF;
-  background-color: #DAA6EF;
-}
-#encyclopedia.active {
-  color:FFFFFF;
-  background-color: #DAA6EF;
-}
-#design.active {
-  color:FFFFFF;
-  background-color: #DAA6EF;
-}
-#personal.active {
+.active-flex {
+  margin-left: 10px;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:FFFFFF;
   background-color: #DAA6EF;
 }
