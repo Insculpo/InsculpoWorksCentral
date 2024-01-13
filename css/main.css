@@ -158,8 +158,8 @@ a:hover {
   flex-flow: row;
   flex-wrap: nowrap;
   justify-content: center;
-  height: calc(2.4wv * 1);
-  font-size: calc(2vw * 1);
+  height: calc(3wv * 1);
+  font-size: calc(2.46vw * 1);
 }
 
 
@@ -176,6 +176,7 @@ a:hover {
 
 .top-div img {
     max-width: 100%;
+    max-height: 80%;
 }
 
 .sub-flex {
