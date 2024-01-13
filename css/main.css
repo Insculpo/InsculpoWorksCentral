@@ -301,7 +301,7 @@ a:hover {
 
 .Nebula{
   position: absolute;
-  position: top;
+  position: bottom;
   margin: left;
   z-index: -2;
   }
@@ -362,6 +362,8 @@ a:hover {
   border-color: #DAA6EF;
   background-color:#312D4C;
   opacity: 0.85;
+  width: 80%;
+  min-height: 1100px;
 }
 
 .blog-body {
