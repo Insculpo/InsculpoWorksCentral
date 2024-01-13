@@ -19,16 +19,30 @@ class StarryBG extends HTMLElement {
     }
 
     buildStars(starCount, scale) {
+        var canva = getElementById("canvas");
         var ctx = this.docScreen.getContext("2d");
         ctx.fillStyle = "white";
         for (let i = 0; i < starCount; i++) {
-            var xPick = Math.random() * window.screen.width;
-            var yPick = Math.random() * window.screen.height;
+            var xPick = Math.random() * canva.screen.width;
+            var yPick = Math.random() * canva.screen.height;
             ctx.beginPath();
             ctx.arc(xPick, yPick, Math.pow(2, 1 + (Math.random() * scale * 10 / 10)) / 2, 0, 2 * Math.PI);
             ctx.fill();
         }
     }
+
+    
 }
+
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    var ctx = this.docScreen.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    this.buildStars(this.starCount * 0.1,2.5);
+    this.buildStars(this.starCount * 0.5,1.25);
+    this.buildStars(this.starCount * 1,0.65);
+    this.buildStars(this.starCount * 2,0.2);
+});
 
 customElements.define('starry-bg', StarryBG);
