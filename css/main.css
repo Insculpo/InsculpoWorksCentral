@@ -158,8 +158,8 @@ a:hover {
   flex-flow: row;
   flex-wrap: nowrap;
   justify-content: center;
-  height: clamp(16px,calc(5wv * 1),32px);
-  font-size: clamp(12px,calc(2.5vw * 1),24px);
+  height: clamp(2px,calc(4.9wv * 1),32px);
+  font-size: clamp(1px,calc(2.45vw * 1),24px);
   
 }
 
