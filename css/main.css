@@ -158,8 +158,8 @@ a:hover {
   flex-flow: row;
   flex-wrap: nowrap;
   justify-content: center;
-  height: calc(3wv * 1);
-  font-size: calc(2.46vw * 1);
+  height: calc(5wv * 1);
+  font-size: calc(2.5vw * 1);
 }
 
 
@@ -203,7 +203,8 @@ a:hover {
   background-color: #000;
    mask-border-width: 10px;
    max-width: 100%;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     margin: 2%;
       margin-top: 2%;
       margin-right: 2%;
@@ -290,9 +291,10 @@ a:hover {
   justify-content:right;
 }
 
-.row {
+.column {
   display:flex;
-  max-width: 100%;
+  flex:25%;
+  max-width: 25%;
   content: wrap;
 }
 
@@ -324,15 +326,17 @@ a:hover {
   padding-bottom: 1%;
   padding-left: 1%;
   padding-right: 1%;
-  max-width: 100%;
+  max-width: 256px;
+  max-height: 326px;
   flex-wrap: wrap;
 }
 
 .picture-mount {
-  display: flex;
   background-color: #111;
-  max-width: 100%;
   align-self: center;
+  object-fit: cover;
+  max-width: 256px;
+  max-height: 256px;
 }
 
 .picture-mount:hover {
@@ -345,7 +349,8 @@ a:hover {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
-    max-width: 100%;
+    max-width: 256px;
+    max-height: 256px;
 }
 
 .terminus {
