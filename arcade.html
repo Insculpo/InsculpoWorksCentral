@@ -31,32 +31,63 @@
     <div class="top-div"><img src="img/SunriseSigil.png" alt="logo"></div></div>
     <div class="bar-body">
       <starry-bg></starry-bg>
-          <div class="link-flex">
-            <div>
-                <a class="sub-flex" id="index" href="index.html">Home</a>
-            </div>
-            <div>
-                <a class="active-flex" id="arcade" href="arcade.html">InsculpoWorks Arcade</a>
-            </div>
-            <div>
-                <a class="sub-flex" id="encyclopedia" href="galaxy.html">Sprawlverse Encyclopedia</a>
-            </div>
-            <div>
-                <a class="sub-flex" id="design" href="gallery.html">Design Gallery</a>
-            </div>   
-            <div>
-                <a class="sub-flex" id="personal" href="blog.html">Contacts</a>
-            </div>
-        </div>
+        <div class="link-flex">
+          <div>
+              <a class="sub-flex" id="index" href="index.html">Home</a>
+          </div>
+          <div>
+              <a class="active-flex" id="personal" href="blog.html">About</a>
+          </div>
+          <div>
+              <a class="sub-flex" id="arcade" href="arcade.html">InsculpoWorks Arcade</a>
+          </div>
+          <div>
+              <a class="sub-flex" id="encyclopedia" href="galaxy.html">Sprawlverse Encyclopedia</a>
+          </div>
+          <div>
+              <a class="sub-flex" id="design" href="gallery.html">Design Gallery</a>
+          </div>   
+      </div>
     </div> 
     
     <div class="gallery-body">
       <div class="game-box">
-        <h2>Project Stranger</h2>
+        <h2>Project Stranger</h2><br>
         <br>
-        <p>Project Stranger is a puzzle game where you do tasks for a space station that abducted you.  Perhaps there is a way to escape?</p>
+        <p>Project Stranger is a puzzle game where you do tasks for a space station that abducted you.  Perhaps there is a way to escape?</p></div><br>
+        
         <img class="game-gif" src="img/GifThree.gif" hover="The player evades a dangerous mine">
         <img class="game-gif" src="img/GifFive.gif">
+        <a href="https://insculpo.itch.io/project-stranger-alphabuild">Play Project Stranger here!</a>
+      </div>
+      <div class="game-box">
+        <h2>Falling Stars</h2>
+        <br>
+        <p>A simple game.</p>
+        <br>
+        <canvas id="unity-canvas" width=600 height=800 style="width: 600px; height: 800px; background: #231F20"></canvas>
+        <script src="ArcadeBuilds/Build/FallingStars.loader.js"></script>
+        <script>
+          if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            // Mobile device style: fill the whole browser client area with the game canvas:
+            var meta = document.createElement('meta');
+            meta.name = 'viewport';
+            meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+            document.getElementsByTagName('head')[0].appendChild(meta);
+          }
+    
+          createUnityInstance(document.querySelector("#unity-canvas"), {
+            dataUrl: "ArcadeBuilds/Build/FallingStars.data",
+            frameworkUrl: "ArcadeBuilds/Build/FallingStars.framework.js",
+            codeUrl: "ArcadeBuilds/Build/FallingStars.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "InsculpoWorks",
+            productName: "Falling Stars",
+            productVersion: "1.0.2",
+            // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+            // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+          });
+        </script>
       </div>
       <div class="game-box">
         <h2>Exospace</h2>
