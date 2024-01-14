@@ -264,6 +264,17 @@ a:hover {
   padding: 1%;
   top:0;
   bottom:0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.central-div {
+  margin: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color:rgba(80, 64, 121,136);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-bottom: 2vw;
 }
 
 .side-div {
