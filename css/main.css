@@ -187,7 +187,7 @@ a:hover {
 }
 
 .game-box{
-  display:flex;
+  display:inline;
   flex-flow: wrap;
   padding: 2%;
 }
@@ -275,6 +275,7 @@ a:hover {
   background-color:rgba(80, 64, 121,136);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-bottom: 2vw;
+  padding-top: 2vw;
 }
 
 .side-div {
